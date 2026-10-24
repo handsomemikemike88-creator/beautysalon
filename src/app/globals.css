@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf7f2;
+  --foreground: #0a0a0a;
+  --accent: #ea580c;
+  --accent-dark: #c2410c;
+  --gold: #b45309;
+  --gold-bright: #d4a017;
+  --surface: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "PingFang HK", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+a {
+  text-underline-offset: 2px;
+}
