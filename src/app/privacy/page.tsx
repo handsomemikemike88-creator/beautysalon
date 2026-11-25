@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       <section className="space-y-2 text-sm">
         <h2 className="text-lg font-semibold text-stone-900">1. 資料使用者</h2>
         <p>
-          {STORE_NAME}／法律實體名稱：{LEGAL_ENTITY}。聯絡資料保障負責人：[待商戶]。
+          {STORE_NAME}／法律實體名稱：{LEGAL_ENTITY}。聯絡資料保障負責人：待商戶提供。
         </p>
       </section>
 
@@ -35,27 +35,32 @@ export default function PrivacyPage() {
         <ul className="list-disc space-y-1 pl-5">
           <li>處理、確認及提醒預約；改期或取消。</li>
           <li>訂金／套票對帳（如適用）。</li>
-          <li>只有另行同意後才發送推廣訊息；可隨時免費退訂。</li>
         </ul>
       </section>
 
       <section className="space-y-2 text-sm">
-        <h2 className="text-lg font-semibold text-stone-900">4. 直接促銷（PICS）</h2>
+        <h2 className="text-lg font-semibold text-stone-900">4. 預約提醒同推廣訊息</h2>
         <p>
-          市場推廣同意與預約必要通訊分開。未剔選同意方格者，只會收到預約確認及提醒。
+          預約前 24 小時同 2 小時嘅提醒，屬於處理你預約所需嘅服務訊息，唔屬於推廣，唔需要另行同意。
+        </p>
+        <p>
+          體驗後跟進，以及套票或其他推廣訊息，只會喺你另外同意（獨立選項，預設唔會剔選）之後先發送。唔同意唔影響你預約或者完成體驗。
+        </p>
+        <p>
+          你可隨時免費取消推廣訊息：WhatsApp 回覆「STOP」，或者撳電郵入面嘅退訂連結。我哋會喺 10 個工作天內處理你嘅退訂要求。
         </p>
       </section>
 
       <section className="space-y-2 text-sm">
         <h2 className="text-lg font-semibold text-stone-900">5. 你的權利</h2>
         <p>
-          你可根據《個人資料（私隱）條例》要求查閱及更正資料。請聯絡：[待商戶]。
+          你可根據《個人資料（私隱）條例》要求查閱及更正資料。請聯絡：待商戶提供。
         </p>
       </section>
 
       <section className="space-y-2 text-sm">
         <h2 className="text-lg font-semibold text-stone-900">6. 保留</h2>
-        <p>保留期限：[待商戶]。之後按內部政策刪除或匿名化。</p>
+        <p>保留期限：待商戶提供。之後按內部政策刪除或匿名化。</p>
       </section>
     </article>
   );

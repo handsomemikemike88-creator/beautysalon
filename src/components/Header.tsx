@@ -23,7 +23,7 @@ export function Header() {
         <nav className="hidden items-center gap-4 text-sm text-stone-700 md:flex" aria-label="Main">
           <Link href="/" className="hover:text-orange-700">{t("nav_home")}</Link>
           <Link href="/services" className="hover:text-orange-700">{t("nav_services")}</Link>
-          <Link href="/trial/hydrafacial-trial" className="hover:text-orange-700">{t("nav_trial")}</Link>
+          <Link href="/services/hydrafacial" className="hover:text-orange-700">{t("nav_trial")}</Link>
           <Link href="/prices" className="hover:text-orange-700">{t("nav_prices")}</Link>
           <Link href="/packages" className="hover:text-orange-700">{t("nav_packages")}</Link>
           <Link href="/therapists" className="hover:text-orange-700">{t("nav_therapists")}</Link>
@@ -59,7 +59,7 @@ export function Header() {
       </div>
       <nav className="flex gap-3 overflow-x-auto border-t border-stone-200 px-4 py-2 text-xs text-stone-600 md:hidden" aria-label="Mobile">
         <Link href="/services">{t("nav_services")}</Link>
-        <Link href="/trial/hydrafacial-trial">{t("nav_trial")}</Link>
+        <Link href="/services/hydrafacial">{t("nav_trial")}</Link>
         <Link href="/prices">{t("nav_prices")}</Link>
         <Link href="/packages">{t("nav_packages")}</Link>
         <Link href="/therapists">{t("nav_therapists")}</Link>

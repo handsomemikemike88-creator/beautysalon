@@ -2,7 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ADDRESS, CONTACT_EMAIL, HOURS, PHONE_DISPLAY, STORE_NAME, whatsappUrl } from "@/lib/site";
+import {
+  ADDRESS,
+  CONTACT_EMAIL,
+  HOURS,
+  MERCHANT_PENDING,
+  PHONE_DISPLAY,
+  STORE_NAME,
+  whatsappUrl,
+} from "@/lib/site";
 import { WhatsAppLink } from "./WhatsAppLink";
 
 export function Footer() {
@@ -15,14 +23,16 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="font-semibold text-amber-200">{STORE_NAME}</p>
-            <p className="mt-2">地址：{ADDRESS}</p>
+            <p className="mt-1 text-[11px] text-amber-200/70">{MERCHANT_PENDING}</p>
+            <p className="mt-2">地址：{ADDRESS}（{MERCHANT_PENDING}）</p>
             <p>電話／WhatsApp：{PHONE_DISPLAY}</p>
             <p>電郵：{CONTACT_EMAIL}</p>
-            <p>營業時間：{HOURS}</p>
+            <p>營業時間：{HOURS}（{MERCHANT_PENDING}）</p>
           </div>
           <div className="flex flex-col gap-2">
             <Link href="/services" className="hover:text-orange-400">服務</Link>
-            <Link href="/trial/hydrafacial-trial" className="hover:text-orange-400">體驗</Link>
+            <Link href="/services/hydrafacial" className="hover:text-orange-400">Hydrafacial 體驗</Link>
+            <Link href="/services/laser-hair-removal" className="hover:text-orange-400">激光脫毛體驗</Link>
             <Link href="/prices" className="hover:text-orange-400">價目</Link>
             <Link href="/packages" className="hover:text-orange-400">套票</Link>
             <Link href="/therapists" className="hover:text-orange-400">信任／護理師</Link>
@@ -41,7 +51,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-8 text-xs text-stone-500">
-          本地 scaffold · 非上線站 · 與 mikeng-ai.com 無關 · 示範內容含 [待商戶] 佔位 · 圖片為 AI 生成示範
+          本地 scaffold · 非上線站 · 與 mikeng-ai.com 無關 · 店名、地址同營業時間待商戶提供 · 圖片為 AI 生成示範圖
         </p>
       </div>
     </footer>

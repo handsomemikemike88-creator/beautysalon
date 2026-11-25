@@ -8,12 +8,13 @@ import {
   PHONE_E164,
   STORE_AREA,
   STORE_NAME,
+  MERCHANT_PENDING,
   whatsappUrl,
 } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `聯絡我們｜${STORE_AREA}美容院`,
-  description: `${STORE_NAME} 地址、電話、WhatsApp、營業時間與到店指引。[待商戶]`,
+  description: `${STORE_NAME} 地址、電話、WhatsApp、營業時間與到店指引。店名、地址同營業時間待商戶提供。`,
 };
 
 export default function ContactPage() {
@@ -22,22 +23,22 @@ export default function ContactPage() {
       <header>
         <h1 className="text-3xl font-semibold">聯絡／到店</h1>
         <p className="mt-2 text-sm text-stone-600">
-          NAP（名稱、地址、電話）佔位——商戶資料到位後須全站一致。
+          名稱、地址同營業時間待商戶提供。商戶資料到位後須全站一致。
         </p>
       </header>
 
       <dl className="space-y-4 rounded-2xl border border-stone-200 bg-white p-6 text-sm">
         <div>
           <dt className="font-medium text-stone-900">名稱</dt>
-          <dd>{STORE_NAME}</dd>
+          <dd>{STORE_NAME}（{MERCHANT_PENDING}）</dd>
         </div>
         <div>
           <dt className="font-medium text-stone-900">地區</dt>
-          <dd>{STORE_AREA}</dd>
+          <dd>{STORE_AREA}（{MERCHANT_PENDING}）</dd>
         </div>
         <div>
           <dt className="font-medium text-stone-900">地址</dt>
-          <dd>{ADDRESS}</dd>
+          <dd>{ADDRESS}（{MERCHANT_PENDING}）</dd>
         </div>
         <div>
           <dt className="font-medium text-stone-900">電話</dt>
@@ -69,7 +70,7 @@ export default function ContactPage() {
         </div>
         <div>
           <dt className="font-medium text-stone-900">營業時間</dt>
-          <dd>{HOURS}</dd>
+          <dd>{HOURS}（{MERCHANT_PENDING}）</dd>
         </div>
       </dl>
 
